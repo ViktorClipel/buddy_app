@@ -1,0 +1,1 @@
+BUDDY_DATA_PATH = None

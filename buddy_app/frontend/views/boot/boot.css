@@ -1,0 +1,39 @@
+body {
+    font-family: 'Consolas', 'Menlo', 'Courier New', monospace;
+    height: 100vh;
+    margin: 0;
+    color: #33ff33;
+    background-color: #1a1a1a;
+    overflow: hidden;
+    border: 1px solid #33ff33;
+}
+#terminal {
+    padding: 15px;
+}
+#terminal p {
+    margin: 0;
+    white-space: pre-wrap;
+    font-size: 14px;
+}
+.cursor {
+    display: inline-block;
+    background-color: #33ff33;
+    width: 10px;
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+    from, to { background-color: transparent; }
+    50% { background-color: #33ff33; }
+}
+
+/* --- NOVOS ESTILOS --- */
+.status-ok { color: #33ff33; }
+.status-fail { color: #ff3333; }
+.spinner {
+    display: inline-block;
+    width: 1ch; /* Largura de um caractere */
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
